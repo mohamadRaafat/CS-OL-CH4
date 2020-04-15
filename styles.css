@@ -1,21 +1,13 @@
-/* #os {
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-                url("https://www.howtogeek.com/thumbcache/2/200/8b2cb8c7c5fc73604d66fd5f0c38be7a/wp-content/uploads/2018/08/img_5b68e80f77e33.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-        } */
+
 .header {
     background-color: rgb(240, 240, 240);
-    height: 100vh;
 }
 
 .thirdsec{
     background-color: rgb(240, 240, 240);
-    height: 120vh;
 }
 
 .secondSec, .lastSec {
-    height: 100vh;
     background-color: rgb(250, 250, 250);
 }
 
