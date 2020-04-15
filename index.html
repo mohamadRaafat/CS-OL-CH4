@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Chapter 4</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- FIRST SECTION-->
+    <div class="header">
+        <u>
+            <h1 class="text-center">Operating System (OS)</h1>
+        </u>
+        <ul class="py-3">
+            <li class="lead">It's a software which allows users to communicate with the computer system</li>
+            <li class="lead">It's responsible for many functions such as:</li>
+        </ul>
+
+        <div class="container">
+            <div class="row">
+                <button type="button" data-trigger="focus" class="col-md-5 btn btn-sm btn-lg btn-info"
+                    data-toggle="popover" title="Function"
+                    data-content="For example: Graphical User Interface (GUI) & Command Line Interface (CLI)">
+                    Provides a User Interface
+                </button>
+                <button type="button" class="offset-md-2 my-2 col-md-5 btn btn-sm  btn-lg btn-info" data-html="true"
+                    data-toggle="popover" title="Function" data-trigger="focus"
+                    data-content="Having an OS allows many programs to be opened at the same time/Tasks running at the same time.">Multitasking
+                    & Multiprogramming
+                </button>
+
+            </div>
+            <div class="row">
+                <button type="button" class="my-md-2 col-md-5 btn btn-sm  btn-lg btn-info" data-html="true"
+                    data-toggle="popover" title="Function" data-trigger="focus"
+                    data-content="<u>Memory Management</u>: Manages available memory. For example: allocates and deallocates memory to processes <hr class='py-0'> <u>Processor Management</u>: Divides processing time among available processes <hr class='py-0'> <u>User Account Management</u>: There can be multiple user accounts on the same operating system.">
+                    Memory Management, Processor Management & User Account Management
+                </button>
+                <button type="button" class="my-2 offset-md-2 col-md-5 btn btn-sm  btn-lg btn-info" data-html="true"
+                    data-toggle="popover" title="Function" data-trigger="focus"
+                    data-content="Manages computer security. For example: Firewalls">
+                    Manages Security
+                </button>
+            </div>
+
+            <div class="row">
+                <button type="button" class="my-md-2 col-md-5 btn btn-sm  btn-lg btn-info" data-html="true"
+                    data-toggle="popover" title="Function" data-trigger="focus"
+                    data-content="Examples for utility programs are Disk formatter and Disk Cleaner">
+                    Utilities Management
+                </button>
+                <button type="button" class="my-2 offset-md-2 col-md-5 btn btn-sm  btn-lg btn-info" data-html="true"
+                    data-toggle="popover" title="Function" data-trigger="focus"
+                    data-content="<u>Batch Processing</u>: Collecting data to be processed at a later time <hr class='py-0'> <u>Real-time</u>: Immediate processing of data">Batch
+                    processing & Real time processing
+                </button>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h2 class="lead">What happens when the computer is switched on?</h2>
+
+        <ul>
+            <li class="h6">
+                Initiating programs (Bootstrap) are loaded into ROM
+                <i class="fas fa-arrow-right"></i>
+                A check is made that Hardware, Software & BIOS are functioning correctly
+                <i class="fas fa-arrow-right"></i>
+                If no errors, OS is loaded into the memory
+            </li>
+        </ul>
+
+        <hr>
+
+        <h3 class="lead">Note:</h3>
+        <ul>
+            <li class="h6">
+                Simple devices such as household items have embedded microprocessors rather than
+                an Operating system as they usually carry out a single simple task
+
+            </li>
+        </ul>
+    </div>
+
+    <!-- SECOND SECTION -->
+    <div class="secondSec">
+        <u>
+            <h1 class="text-center pt-3">Interrupts & Buffers</h1>
+        </u>
+
+        <p class="h4 mt-4">Interrupt:
+            <ul class="lead interrupt">
+                <li>
+                    signal
+                </li>
+                <li>
+                    sent from a device/software to the processor
+                </li>
+                <li>
+                    requiring the attention of the processor
+                </li>
+            </ul>
+        </p>
+
+        <p class="h5 mt-4">Types:
+            <ul class="lead interrupt">
+                <li>
+                    Hardware Interrupt: Printer out of paper
+                </li>
+                <li>
+                    Software Interrupt: error in a running program
+                </li>
+                <li>
+                    User Interrupt: user press some keys to interrupt the current process
+                </li>
+            </ul>
+        </p>
+
+        <p class="lead border rounded border-danger shadow">
+            Processor doing a task
+            <i class="fas fa-arrow-right"></i>
+            Interrupt received
+            <i class="fas fa-arrow-right"></i>
+            processor checks the priority of the interrupt
+            <i class="fas fa-arrow-right"></i>
+            If the priority is high enough, the status of the current task is saved using the interrupt handler
+            <i class="fas fa-arrow-right"></i>
+            Processor serves the interrupt
+            <i class="fas fa-arrow-right"></i>
+            Continue the task
+
+        </p>
+
+        <hr class="secbreak my-4">
+
+
+        <p class="h4 mt-4">Buffer:
+            <ul class="lead interrupt">
+                <li>
+                    Temporary storage area
+                </li>
+                <li>
+                    used to compensate for the speed gap between the very fast processor and the slow peripherals
+                </li>
+            </ul>
+        </p>
+    </div>
+
+
+    <!-- THIRD SEC -->
+    <div class="thirdsec">
+        <u>
+            <h1 class="text-center pt-4">Von Neuman architechture</h1>
+        </u>
+        <u>
+            <h4 class="mt-4">Stored Program Concept:</h4>
+        </u>
+        <ul class="lead">
+            <li>Program is stored on a secondary storage device</li>
+            <li>Program consists of a set of instruction</li>
+            <li>The instructions are moved to main memory (RAM)</li>
+            <li>Instructions are then moved to registers to be executed</li>
+            <li>Processor executes each instruction one after another</li>
+        </ul>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-busses-list" data-toggle="list"
+                        href="#list-busses" role="tab" aria-controls="home">Busses</a>
+                    <a class="list-group-item list-group-item-action" id="list-Registers-list" data-toggle="list"
+                        href="#list-Registers" role="tab" aria-controls="profile">Registers</a>
+                    <a class="list-group-item list-group-item-action" id="list-PC-list" data-toggle="list"
+                        href="#list-PC" role="tab" aria-controls="messages">PC</a>
+                    <a class="list-group-item list-group-item-action" id="list-MAR-list" data-toggle="list"
+                        href="#list-MAR" role="tab" aria-controls="settings">MAR</a>
+                    <a class="list-group-item list-group-item-action" id="list-MDR-list" data-toggle="list"
+                        href="#list-MDR" role="tab" aria-controls="settings">MDR</a>
+                    <a class="list-group-item list-group-item-action" id="list-CIR-list" data-toggle="list"
+                        href="#list-CIR" role="tab" aria-controls="settings">CIR</a>
+                    <a class="list-group-item list-group-item-action" id="list-ALU-list" data-toggle="list"
+                        href="#list-ALU" role="tab" aria-controls="settings">ALU</a>
+
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-busses" role="tabpanel"
+                        aria-labelledby="list-busses-list">
+                        <u>
+                            <h5>Data Bus:</h5>
+                        </u>
+                        <ul>
+                            <li>
+                                Transports Data
+                            </li>
+                            <li>
+                                Bidirectional
+                            </li>
+                        </ul>
+
+                        <u>
+                            <h5>Address Bus:</h5>
+                        </u>
+                        <ul>
+                            <li>
+                                Transports an Address
+                            </li>
+                            <li>
+                                Unidirectional
+                            </li>
+                        </ul>
+
+                        <u>
+                            <h5>Control Bus:</h5>
+                        </u>
+                        <ul>
+                            <li>
+                                Carries signals relating to control and coordination
+                            </li>
+                            <li>
+                                Can be Unidirectional or Bidirectional
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="list-Registers" role="tabpanel" aria-labelledby="list-Registers-list">
+                        <ul class="lead">
+                            <li>High speed storage area</li>
+                            <li>Data is represented in a register to be processed</li>
+                            <li>examples: PC, MAR, MDR, CIR, ALU, ACC</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="list-PC" role="tabpanel" aria-labelledby="list-PC-list">
+                        <p class="lead">Contains address of the next instruction to be fetched</p>    
+                    </div>
+                    <div class="tab-pane fade" id="list-MAR" role="tabpanel" aria-labelledby="list-MAR-list">
+                    <p class="lead">Contains the address of the memory location of the instruction</p>
+                    </div>
+                    <div class="tab-pane fade" id="list-MDR" role="tabpanel" aria-labelledby="list-MDR-list">
+                        <ul class="lead">
+                            <li>Stores data that is in use</li>
+                            <li>This data is in the address held in MAR</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-CIR" role="tabpanel" aria-labelledby="list-CIR-list">
+                        <p class="lead">Stores the instruction <strong>WHILE</strong> it's being decoded and executed</p></div>
+                    <div class="tab-pane fade" id="list-ALU" role="tabpanel" aria-labelledby="list-ALU-list">
+                        <ul class="lead">
+                            <li>Carries out <u>Calculations</u> and <u>Logical Operations</u></li>
+                            <li>During Calculations, data is held in a register called <u>Accumulator (ACC)</u> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <h2 class="lead">What is the role of the Control unit (CU)?</h2>
+        <ul>
+            <li class="h6">The control Unit reads an instruction from the memory (Fetching)</li>
+            <li class="h6">The instruction is then interpreted (Decoding)</li>
+            <li class="h6">Signals are sent (with the control bus) to other computer components telling them what to do (Executing)</li>
+        </ul>
+    </div>
+
+
+    <!-- Last Sec -->
+    
+    <div class="lastSec py-4">
+        <u>
+            <h1 class="text-center mb-5">Fetch-Decode-Execute cycle</h1>
+        </u>
+        <ol class="lead">
+            <li class="py-3 cycle">PC contains the address of the next instruction to be fetched</li>
+            <li class="py-3 cycle">This address is copied to the MAR (using the address bus)</li>
+            <li class="py-3 cycle">The contents of the memory location held in MAR is copied to the MDR (using data bus)</li>
+            <li class="py-3 cycle">The contents are then copied to the CIR to be processed</li>
+            <li class="py-3 cycle">The value in the PC is then incremented by 1 so that it now points to the next instruction to be fetched</li>
+            <p class="lead text-center text-muted">This is the "Fetch" part of the cycle</p>
+            <li class="py-3 cycle">The instructions in CIR are decoded and executed by sending signals (Using control bus) to other computer components telling them what to do</li>
+        </ol>
+        
+        <p class="cycle-summary lead  border p-2 rounded border-info shadow">PC <i class="fas fa-arrow-right"></i> MAR <i class="fas fa-arrow-right"></i> MDR <i class="fas fa-arrow-right"></i> CIR <i class="fas fa-arrow-right"></i> PC = PC + 1 <i class="fas fa-arrow-right"></i> Decode & Execute</p>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/c86877f778.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+
+</html>
